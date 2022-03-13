@@ -15,7 +15,10 @@ export const sing = (start, end, options = {}) => {
 };
 
 export const verse = (num, options = {}) => {
-  const { drink, container } = { ...defaultOptions, ...options };
+  const { drink, container, withPreposition } = {
+    ...defaultOptions,
+    ...options,
+  };
 
   const items = withPreposition
     ? `${container}s of ${drink}`
