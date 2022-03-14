@@ -24,6 +24,7 @@ export const verse = (num, submittedOptions = {}) => {
   const { itemAndCount, newItemAndCount } = getItemTerms(num, options);
 
   const changeTheCount = getChangeTheCount(num);
+
   return [
     `${capitalize(itemAndCount)} on the wall, ${itemAndCount}.`,
     `${changeTheCount}, ${newItemAndCount} on the wall.`,
@@ -84,8 +85,3 @@ const replaceKeywords = (itemStructure, count, drink, container) =>
     .replace(COUNT_REGEX, count);
 
 const capitalize = (s) => s[0].toUpperCase() + s.slice(1);
-
-const tester = "tester";
-console.log(tester);
-console.log(capitalize(tester));
-console.log(tester);
