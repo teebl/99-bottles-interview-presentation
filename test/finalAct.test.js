@@ -104,7 +104,7 @@ Go to the store and buy some more, 99 bottles of milk on the wall.`;
     });
   });
 
-  describe("Test suite", function () {
+  describe("withPreposition", function () {
     it("prints an arbitrary verse", () => {
       const expected = `8 bottles of beer on the wall, 8 bottles of beer.
 Take one down and pass it around, 7 bottles of beer on the wall.`;

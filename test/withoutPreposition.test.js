@@ -3,7 +3,7 @@ import fs from "fs";
 import Mocha from "mocha";
 import { expect } from "chai";
 
-import { sing, verse } from "../examples/withPreposition.js";
+import { sing, verse } from "../examples/withoutPreposition.js";
 
 var mocha = new Mocha();
 
